@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 #pragma warning(default:4716)
 
@@ -32,8 +32,9 @@ public:
 
 int main()
 {
+
     Fighter Andry("A", 15, 4);
     Fighter Dmitro("B", 20, 3);
-    Fight a;
-    a.GetWinner(N1, N2);
+    Fight First;//першій бій
+    First.GetWinner(N1, N2);
 }
