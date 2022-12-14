@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 #pragma warning(default:4716)
 
@@ -19,7 +19,7 @@ public:
 class Fight
 {
 public:
-    void GetWinner(Fighter a, Fighter b)
+    void get_winner(Fighter a, Fighter b)
     {
         if (a.healthy / b.damagePerAttack >= b.healthy / a.damagePerAttack)
             cout << "Winner -- " << a.name << endl;
@@ -32,9 +32,8 @@ public:
 
 int main()
 {
-
     Fighter Andry("A", 15, 4);
     Fighter Dmitro("B", 20, 3);
-    Fight First;//першій бій
-    First.GetWinner(N1, N2);
+    Fight First;
+    First.get_winner(Andry, Dmitro);
 }
